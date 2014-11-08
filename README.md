@@ -9,7 +9,7 @@ Below is an excerpt from the Design document outline some of the classes to be i
 
 3.2.1 Employee
 
-Identification	LVC.interfaces.Employee
+Identification	LVC.interfaces.Employee\n
 Type	Interface
 Purpose	Supertype for Managers and Developers: both categorized by employee status at JK System Solutions.
 Function	Simply a Java interface that provides a contract for action items and sub-projects.  Allows the GUI to categorize both as sub-tasks of a project.
