@@ -12,11 +12,12 @@ package lvcv2;
  */
 public class Employee {
     
-    protected String name,title;
+    protected String name,title,id;
     
-    public Employee(String name)
+    public Employee(String id,String name)
     {
         this.name=name;
+        this.id=id;
     }
     
     public String getName()
@@ -37,5 +38,21 @@ public class Employee {
     public boolean isDeveloper()
     {
        return this.title.equals("Developer"); 
+    }
+    
+    public String getId()
+    {
+        return this.id;
+    }
+    
+    public void setId(String ID)
+    {
+        this.id=ID;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return getName();
     }
 }

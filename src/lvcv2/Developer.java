@@ -10,8 +10,8 @@ package lvcv2;
 public class Developer extends Employee
 {
     
-    public Developer(String name){
-        super(name);
+    public Developer(String id,String name){
+        super(id,name);
         this.title = "Developer";
     }
 }

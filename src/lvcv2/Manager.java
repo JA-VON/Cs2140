@@ -13,8 +13,8 @@ package lvcv2;
 public class Manager extends Employee
 {
     
-    public Manager(String name){
-       super(name);
+    public Manager(String id,String name){
+       super(id,name);
        this.title = "Manager";
     }
     

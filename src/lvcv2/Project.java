@@ -11,13 +11,15 @@ package lvcv2;
 public class Project
 {
     
-    private String title;
+    private String title,deadline,description;
     private Manager manager;
     
-    public Project(String title,Manager manager)
+    public Project(String title,Manager manager,String description,String deadline)
     {
         this.title = title;
         this.manager = manager;
+        this.description = description;
+        this.deadline = deadline;
     }
 
     public String getTitle()
@@ -40,5 +42,29 @@ public class Project
         this.manager = manager;
     }
     
+    public void setDeadline(String deadline)
+    {
+        this.deadline = deadline;
+    }
     
+    public String getDeadline()
+    {
+        return this.deadline;
+    }
+    
+    public String getDescription()
+    {
+        return this.description;
+    }
+    
+    public void setDescription(String description)
+    {
+        this.description = description;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return getTitle();
+    }
 }

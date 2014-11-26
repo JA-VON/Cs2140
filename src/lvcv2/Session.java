@@ -14,12 +14,12 @@ public class Session {
     
     private static Employee employee;
     
-    public void setEmployee(Employee e)
+    public static void setEmployee(Employee e)
     {
         employee = e;
     }
     
-    public Employee getEmployee()
+    public static Employee getEmployee()
     {
         return employee;
     }

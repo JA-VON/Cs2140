@@ -27,11 +27,11 @@ import javafx.scene.control.TextField;
  */
 public class DeveloperPageController implements Initializable {
     
-    @FXML private ListView<String> list;
+    @FXML private ListView<Project> list;
     @FXML private Label manager,deadline,description;
     @FXML private Button viewButton,addCodeButton;
     
-    private final ObservableList<String> currentList = FXCollections.observableArrayList();
+    private final ObservableList<Project> currentList = FXCollections.observableArrayList();
     
     @FXML
     public void handleAddCode(ActionEvent event)
@@ -55,10 +55,34 @@ public class DeveloperPageController implements Initializable {
         
         list.setItems(currentList);
         
-        currentList.add("Project 1");
-        currentList.add("Project 2");
-        currentList.add("Project 3");
-        currentList.add("Project 4");
+        list.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Project>() {
+
+            @Override
+            public void changed(ObservableValue<? extends Project> ov, Project t, Project t1) {
+                
+                manager.setText(t1.getManager().toString());
+                deadline.setText(t1.getDeadline());
+                description.setText(t1.getDescription());
+                
+                if(viewButton.isDisabled()&&addCodeButton.isDisabled())
+                {
+                    viewButton.setDisable(false);
+                    addCodeButton.setDisable(false);
+                }
+                    
+            }
+        });
+        
+        getProjects();
+
+    }
+    
+    public void getProjects() {
+        
+        currentList.clear();
+      
+        currentList.addAll(Server.getProjects(Session.getEmployee()));
+
     }
     
 }

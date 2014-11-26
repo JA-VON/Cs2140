@@ -27,7 +27,7 @@ import javafx.stage.Stage;
  *
  * @author Javon-Personal
  */
-public class LoginPageController extends Session implements Initializable  {
+public class LoginPageController implements Initializable  {
 
     private Stage stage;
     
@@ -47,6 +47,7 @@ public class LoginPageController extends Session implements Initializable  {
         Employee employee = Server.validEmployee(id, pw);
         if(employee!=null)
         {
+            Session.setEmployee(employee);
             if(employee.isDeveloper())
             {
                 stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
