@@ -1,4 +1,4 @@
-package lvcv2.classes;
+package lvcv2;
 
 /**
  * This is the Developer's class that gives all methods that are authorized to Developers.

@@ -1,4 +1,4 @@
-package lvcv2.classes;
+package lvcv2;
 
 
 /**
@@ -79,4 +79,5 @@ public class Project
     {
         return getTitle();
     }
+    
 }

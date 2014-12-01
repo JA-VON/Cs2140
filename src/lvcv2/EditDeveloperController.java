@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package lvcv2.gui.controllers;
+package lvcv2;
 
-import lvcv2.classes.datalayer.Server;
-import lvcv2.classes.Project;
+import lvcv2.Server;
+import lvcv2.Project;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;

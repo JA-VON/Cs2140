@@ -1,4 +1,4 @@
-package lvcv2.classes.datalayer;
+package lvcv2;
 
 
 
@@ -13,10 +13,10 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import lvcv2.LVCv2;
-import lvcv2.classes.Developer;
-import lvcv2.classes.Employee;
-import lvcv2.classes.Manager;
-import lvcv2.classes.Project;
+import lvcv2.Developer;
+import lvcv2.Employee;
+import lvcv2.Manager;
+import lvcv2.Project;
 
 
 /**

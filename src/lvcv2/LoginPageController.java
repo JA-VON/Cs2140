@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package lvcv2.gui.controllers;
+package lvcv2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,10 +21,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import lvcv2.classes.Employee;
+import lvcv2.Employee;
 import lvcv2.LVCv2;
-import lvcv2.classes.datalayer.Server;
-import lvcv2.classes.datalayer.Session;
+import lvcv2.Server;
+import lvcv2.Session;
 
 /**
  * FXML Controller class

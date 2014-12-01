@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 
-package lvcv2.gui.controllers;
+package lvcv2;
 
-import lvcv2.classes.Developer;
-import lvcv2.classes.datalayer.Server;
-import lvcv2.classes.datalayer.Session;
-import lvcv2.classes.Project;
+import lvcv2.Developer;
+import lvcv2.Server;
+import lvcv2.Session;
+import lvcv2.Project;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package lvcv2.classes.datalayer;
+package lvcv2;
 
-import lvcv2.classes.Employee;
+import lvcv2.Employee;
 
 /**
  *
